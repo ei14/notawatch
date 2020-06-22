@@ -1,0 +1,49 @@
+Watch has a screen and 2 buttons below.
+	Left button shall be called A.
+	Right button shall be called B.
+Watch is off most times.
+	Pressing any button enters time mode.
+		The time is displayed.
+			Hour on top, minute on bottom.
+		While A is held, date mode is active.
+			The date is displayed.
+			Day of the week on top, day of the month on bottom.
+		When B is held for a specific interval of time, stopwatch mode begins.
+			The screen flashes ST/OP as a transition.
+			The time on the stopwatch is shown.
+				By default it is 00:00.
+				Top is seconds, bottom is hundredths of a second.
+				If stopwatch time is beyond 99.99 seconds, it adjusts.
+					Minute/Second, Hour/Minute, Day/Hour
+					When paused, before the stopwatch displays time,
+						it flashes SC/CS MN/SC, HR/MN, or DY/HR for clarity.
+			A resets stopwatch.
+			B starts/resumes stopwatch.
+				A records a lap.
+				B stops stopwatch.
+					A shows lap if there is one recorded. Otherwise, it resets.
+						A again resets.
+					B resumes stopwatch.
+		When A and B are held for a specific interval of time, game mode begins.
+			The screen flashes GA/ME as a transition.
+			Title of selected game appears.
+			A selects game and begins playing it.
+			B scrolls to next game.
+			Snake
+				SN/EK
+				The snake is bounded to the 8x8 grid.
+				The snake appears in solid and the apple flashes rapidly.
+				The head of the snake flashes a few times before each advance.
+				A turns the snake left.
+				B turns the snake right.
+				Upon game over, the score is displayed.
+					A restarts the game.
+					B turns the watch back to sleep mode.
+			Connect 4
+				CO/N4
+				The bottom right 7x6 area is used for gameplay.
+				Player 1's pieces appear in solid.
+				Player 2's pieces appear rapidly flashing.
+				The current player's piece appears at the top row.
+					A drops the piece down vertically onto the board.
+					B move the piece one to the right, wrapping back if needed.

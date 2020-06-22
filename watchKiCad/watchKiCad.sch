@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "NotAWatch"
+Date "2020-06-21"
+Rev "0"
+Comp ""
+Comment1 "A simple programmable LED watch."
+Comment2 "Created by Thomas Kaldahl."
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC595 U?
+U 1 1 5EEFFFB6
+P 4300 3550
+F 0 "U?" H 4300 4331 50  0000 C CNN
+F 1 "74HC595" H 4300 4240 50  0000 C CNN
+F 2 "" H 4300 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4300 3550 50  0001 C CNN
+	1    4300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny84A-SSU U?
+U 1 1 5EF04F34
+P 2750 4800
+F 0 "U?" H 2220 4846 50  0000 R CNN
+F 1 "ATtiny84A-SSU" H 2220 4755 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 4800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf" H 2750 4800 50  0001 C CNN
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EF1EB9C
+P 4150 5300
+F 0 "C?" V 4402 5300 50  0000 C CNN
+F 1 "18pF" V 4311 5300 50  0000 C CNN
+F 2 "" H 4188 5150 50  0001 C CNN
+F 3 "~" H 4150 5300 50  0001 C CNN
+	1    4150 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF20E62
+P 2750 5700
+F 0 "#PWR?" H 2750 5450 50  0001 C CNN
+F 1 "GND" H 2755 5527 50  0000 C CNN
+F 2 "" H 2750 5700 50  0001 C CNN
+F 3 "" H 2750 5700 50  0001 C CNN
+	1    2750 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC595 U?
+U 1 1 5EF10331
+P 7800 5850
+F 0 "U?" H 7800 6631 50  0000 C CNN
+F 1 "74HC595" H 7800 6540 50  0000 C CNN
+F 2 "" H 7800 5850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 7800 5850 50  0001 C CNN
+	1    7800 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L watch:KVM-20882CVB U?
+U 1 1 5EF38C2B
+P 6550 3700
+F 0 "U?" H 6550 4275 50  0000 C CNN
+F 1 "KVM-20882CVB" H 6550 4184 50  0000 C CNN
+F 2 "" H 6550 4150 50  0001 C CNN
+F 3 "" H 6550 4150 50  0001 C CNN
+	1    6550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5EF87E3C
+P 7350 4450
+F 0 "R?" H 7418 4496 50  0000 L CNN
+F 1 "470" H 7418 4405 50  0000 L CNN
+F 2 "" V 7390 4440 50  0001 C CNN
+F 3 "~" H 7350 4450 50  0001 C CNN
+	1    7350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EF1E692
+P 4150 5000
+F 0 "C?" V 4402 5000 50  0000 C CNN
+F 1 "18pF" V 4311 5000 50  0000 C CNN
+F 2 "" H 4188 4850 50  0001 C CNN
+F 3 "~" H 4150 5000 50  0001 C CNN
+	1    4150 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F00AA53
+P 4600 5450
+F 0 "SW?" H 4600 5735 50  0000 C CNN
+F 1 "SW_Push" H 4600 5644 50  0000 C CNN
+F 2 "" H 4600 5650 50  0001 C CNN
+F 3 "~" H 4600 5650 50  0001 C CNN
+	1    4600 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5000 3550 5000
+Wire Wire Line
+	3550 5000 3550 5100
+Wire Wire Line
+	3550 5300 3550 5200
+Wire Wire Line
+	3700 5300 3550 5300
+$Comp
+L Device:Crystal Y?
+U 1 1 5EF181C4
+P 3700 5150
+F 0 "Y?" V 3654 5281 50  0000 L CNN
+F 1 "4MHz" V 3745 5281 50  0000 L CNN
+F 2 "" H 3700 5150 50  0001 C CNN
+F 3 "~" H 3700 5150 50  0001 C CNN
+	1    3700 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 5100 3350 5100
+Wire Wire Line
+	3350 5200 3550 5200
+Wire Wire Line
+	3700 5000 4000 5000
+Connection ~ 3700 5000
+Wire Wire Line
+	3700 5300 4000 5300
+Connection ~ 3700 5300
+Wire Wire Line
+	2750 5700 2150 5700
+Connection ~ 2750 5700
+Wire Wire Line
+	4300 5000 4300 5150
+Wire Wire Line
+	4300 5700 2750 5700
+Connection ~ 4300 5300
+Wire Wire Line
+	4300 5300 4300 5450
+NoConn ~ 3350 4800
+NoConn ~ 3350 4700
+NoConn ~ 3350 4600
+NoConn ~ 3350 5400
+Wire Wire Line
+	3350 5300 3450 5300
+Wire Wire Line
+	3450 5300 3450 5400
+$Comp
+L Device:R_US 10k
+U 1 1 5F0E1148
+P 5050 5150
+F 0 "10k" H 5118 5196 50  0000 L CNN
+F 1 "R_US" H 5118 5105 50  0000 L CNN
+F 2 "" V 5090 5140 50  0001 C CNN
+F 3 "~" H 5050 5150 50  0001 C CNN
+	1    5050 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F00CE92
+P 4600 5150
+F 0 "SW?" H 4600 5435 50  0000 C CNN
+F 1 "SW_Push" H 4600 5344 50  0000 C CNN
+F 2 "" H 4600 5350 50  0001 C CNN
+F 3 "~" H 4600 5350 50  0001 C CNN
+	1    4600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US 10k?
+U 1 1 5F122294
+P 5050 5450
+F 0 "10k?" H 5118 5496 50  0000 L CNN
+F 1 "R_US" H 5118 5405 50  0000 L CNN
+F 2 "" V 5090 5440 50  0001 C CNN
+F 3 "~" H 5050 5450 50  0001 C CNN
+	1    5050 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 5150 4900 5150
+Wire Wire Line
+	4800 5450 4900 5450
+Wire Wire Line
+	4400 5150 4300 5150
+Connection ~ 4300 5150
+Wire Wire Line
+	4300 5150 4300 5300
+Wire Wire Line
+	4400 5450 4300 5450
+Connection ~ 4300 5450
+Wire Wire Line
+	4300 5450 4300 5700
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U?
+U 1 1 5EF61304
+P 1850 5700
+F 0 "U?" H 1850 5942 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 1850 5851 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1850 5900 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 1950 5450 50  0001 C CNN
+	1    1850 5700
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EF5FC90
+P 1850 5400
+F 0 "#PWR?" H 1850 5250 50  0001 C CNN
+F 1 "VCC" H 1865 5573 50  0000 C CNN
+F 2 "" H 1850 5400 50  0001 C CNN
+F 3 "" H 1850 5400 50  0001 C CNN
+	1    1850 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6000 1550 6000
+Wire Wire Line
+	1550 6000 1550 3900
+Wire Wire Line
+	1550 3900 2750 3900
+$EndSCHEMATC
