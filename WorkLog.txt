@@ -25,3 +25,4 @@ SAT 20 - Successfully controlled two 74HC595 shift registers using ATtiny84.
 	matrix using the ATtiny84 and 2x 74HC595. Created draft of the full
 	functionality of the watch. Ordered a set of crystal oscillators online.
 SUN 21 - Downloaded and installed KiCAD. Started creating electronic schematic.
+MON 22 - Created electronic schematic.
