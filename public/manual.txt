@@ -26,13 +26,16 @@ Watch is off most times.
 					When paused, before the stopwatch displays time,
 						It flashes SC/CS MN/SC, HR/MN, or DY/HR for clarity.
 			A resets stopwatch.
+				Resetting stopwatch twice escapes it and enters sleep mode.
 			B starts/resumes stopwatch.
-				A records a lap.
+				A records a lap and displays it, flashing.
+					A records another lap and displays it.
+					B stops stopwatch and keeps lap displaying.
+						B again shows the finishing time on the stopwatch.
 				B stops stopwatch.
 					A shows lap if there is one recorded. Otherwise, it resets.
 						A again resets.
 					B resumes stopwatch.
-			Holding any button long enough causes the watch to enter sleep mode.
 		When A, then B are held for a specific interval of time: game mode.
 			The screen flashes GA/ME as a transition.
 			Title of selected game appears.
@@ -56,3 +59,4 @@ Watch is off most times.
 				The current player's piece appears at the top row.
 					A drops the piece down vertically onto the board.
 					B move the piece one to the right, wrapping back if needed.
+				Holding A and B long enough enters sleep mode.
