@@ -8,6 +8,14 @@ Watch is off most times.
 		While A is held, date mode is active.
 			The date is displayed.
 			Day of the week on top, day of the month on bottom.
+			B enters time adjustment mode.
+				For each adjustment,
+					The screen top shows the unit being changed.
+						Units: CS, SC, MN, HR, DY, MT, and YR.
+					The screen bottom shows the value of the unit.
+					A adds 1.
+						Holding A longer adds 4, then keeps adding 5.
+					B goes to the next unit.
 		When B is held for a specific interval of time, stopwatch mode begins.
 			The screen flashes ST/OP as a transition.
 			The time on the stopwatch is shown.
@@ -16,7 +24,7 @@ Watch is off most times.
 				If stopwatch time is beyond 99.99 seconds, it adjusts.
 					Minute/Second, Hour/Minute, Day/Hour
 					When paused, before the stopwatch displays time,
-						it flashes SC/CS MN/SC, HR/MN, or DY/HR for clarity.
+						It flashes SC/CS MN/SC, HR/MN, or DY/HR for clarity.
 			A resets stopwatch.
 			B starts/resumes stopwatch.
 				A records a lap.
@@ -24,7 +32,8 @@ Watch is off most times.
 					A shows lap if there is one recorded. Otherwise, it resets.
 						A again resets.
 					B resumes stopwatch.
-		When A and B are held for a specific interval of time, game mode begins.
+			Holding any button long enough causes the watch to enter sleep mode.
+		When A, then B are held for a specific interval of time: game mode.
 			The screen flashes GA/ME as a transition.
 			Title of selected game appears.
 			A selects game and begins playing it.

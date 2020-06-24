@@ -22,8 +22,10 @@ FRI 19 - Received ATtiny84 and MAX7219. Successfully wrote and executed a simple
 	74HC595 shift registers for convenience.
 SAT 20 - Successfully controlled two 74HC595 shift registers using ATtiny84.
 	Wrote a program that demonstrates full control over each pixel on an 8x8 LED
-	matrix using the ATtiny84 and 2x 74HC595. Created draft of the full
-	functionality of the watch. Ordered a set of crystal oscillators online.
+	matrix using the ATtiny84 and 2x 74HC595. Created a basic user manual for
+	the watch. Ordered a set of crystal oscillators online.
 SUN 21 - Downloaded and installed KiCAD. Started creating electronic schematic.
 MON 22 - Created electronic schematic.
-TUE 23 - Received crystal oscillators.
+TUE 23 - Received crystal oscillators. Ordered a set of ceramic capacitors
+	online.
+WED 24 - Received ceramic capacitors. Added to the user manual.
