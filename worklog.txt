@@ -29,3 +29,6 @@ MON 22 - Created electronic schematic.
 TUE 23 - Received crystal oscillators. Ordered a set of ceramic capacitors
 	online.
 WED 24 - Received ceramic capacitors. Added to the user manual.
+THU 25 - Started designing PCB. Working on allowing the wires to all connect.
+FRI 26 - Continued work on PCB design. Rearranged ports to allow for easier
+	wiring.
