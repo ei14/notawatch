@@ -1,0 +1,12 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"REF**,REF**,REF**,REF**";"SolderWire-0.1sqmm_1x01_D0.4mm_OD1mm";4;"SolderWire-0.1sqmm_1x01_D0.4mm_OD1mm";;;
+2;"U2";"SOIC-14_3.9x8.7mm_P1.27mm";1;"ATtiny84A-SSU";;;
+3;"U5";"KWM-20882CVB";1;"KWM-20882CVB";;;
+4;"SW1";"SW_PUSH_6mm";1;"Button A";;;
+5;"SW2";"SW_PUSH_6mm";1;"Button B";;;
+6;"C1,C2";"C_0603_1608Metric";2;"18pF";;;
+7;"R1,R2";"R_1206_3216Metric";2;"10K";;;
+8;"R3,R4,R5,R6,R7,R8,R9,R10";"R_1206_3216Metric";8;"470";;;
+9;"U1";"SOT-223-3_TabPin2";1;"LD1117S33TR_SOT223";;;
+10;"U3,U4";"SOIC-16_3.9x9.9mm_P1.27mm";2;"SN74HC595D";;;
+11;"Y1";"Crystal_HC49-4H_Vertical";1;"4MHz";;;

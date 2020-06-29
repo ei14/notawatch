@@ -32,3 +32,6 @@ WED 24 - Received ceramic capacitors. Added to the user manual.
 THU 25 - Started designing PCB. Working on allowing the wires to all connect.
 FRI 26 - Continued work on PCB design. Rearranged ports to allow for easier
 	wiring.
+SAT 27 - Continued work on PCB design. Used trial and error to find a working
+	circuit and track arrangement.
+SUN 28 - Finished PCB.
