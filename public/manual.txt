@@ -11,7 +11,7 @@ Watch is off most times.
 			B enters time adjustment mode.
 				For each adjustment,
 					The screen top shows the unit being changed.
-						Units: CS, SC, MN, HR, DY, MT, and YR.
+						Units: CS, SC, MN, HR, DY, MO, and YR.
 					The screen bottom shows the value of the unit.
 					A adds 1.
 						Holding A longer adds 4, then keeps adding 5.
