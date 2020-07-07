@@ -10,11 +10,16 @@
 .equ ser_b = pa1
 .equ rfsh = pa2
 .equ shft = pa2
-.equ col = pa0
 .equ btn_a = pb2
 .equ btn_b = pa7
+.def ns = r16
+.def us = r17
+.def ms = r18
+.def sc = r19
+.def mn = r20
+.def dy = r21
 
-.org 0x0000
+.org 0
 	sbi ddra, ser_a
 	sbi ddra, ser_b
 	sbi ddra, shft
@@ -22,7 +27,10 @@
 
 sleep:
 
+render_line:
+
 time:
+	inc r31
 
 date:
 
