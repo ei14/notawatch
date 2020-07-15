@@ -1,6 +1,8 @@
 THOMAS KALDAHL
-JUNE 2020
+NotAWatch
+2020
 
+====================================[ JUNE ]====================================
 THU 11 - Would like to make a watch using integrated circuits on printed
 	circuit boards. Would like it to tell time and date, serve as stopwatch, and
 	play some basic games.
@@ -34,4 +36,12 @@ FRI 26 - Continued work on PCB design. Rearranged ports to allow for easier
 	wiring.
 SAT 27 - Continued work on PCB design. Used trial and error to find a working
 	circuit and track arrangement.
-SUN 28 - Finished PCB.
+SUN 28 - Finalized PCB.
+====================================[ JULY ]====================================
+THU  9 - Compared AVR C and AVR assembly.
+FRI 10 - Settled on assembly. Researched AVR assembly.
+SAT 11 - Created development environment for assembly coding and testing.
+MON 13 - Continued research on AVR assembly. Began testing assembly code on
+	simulated AVR.
+TUE 14 - Created working time keeper function to track the amount of time
+	elapsed between instructions.

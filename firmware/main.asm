@@ -12,12 +12,13 @@
 .equ shft = pa2
 .equ btn_a = pb2
 .equ btn_b = pa7
-.def ns = r16
-.def us = r17
-.def ms = r18
-.def sc = r19
-.def mn = r20
-.def dy = r21
+
+.def ns = r26
+.def us = r27
+.def ms = r28
+.def sc = r29
+.def mn = r30
+.def dy = r31
 
 .org 0
 	sbi ddra, ser_a
@@ -27,10 +28,37 @@
 
 sleep:
 
-render_line:
-
 time:
-	inc r31
+	ldi r25, 6
+	rcall inc_time
+	rjmp time
+
+inc_time: ; r25: amount to be added. This function needs 3 extra to the amount.
+	add ns, r25
+	brcc return
+	ldi r25, 4
+	add ns, r25
+	inc us
+	brne return
+	ldi r25, 4
+	add ns, r25
+	inc ms
+	brne return
+	ldi r25, 4
+	add ns, r25
+	inc sc
+	brne return
+	ldi r25, 4
+	add ns, r25
+	inc mn
+	brne return
+	ldi r25, 4
+	add ns, r25
+	inc dy
+	brne return
+
+return:
+	ret
 
 date:
 
