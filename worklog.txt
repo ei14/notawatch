@@ -45,3 +45,6 @@ MON 13 - Continued research on AVR assembly. Began testing assembly code on
 	simulated AVR.
 TUE 14 - Created working time keeper function to track the amount of time
 	elapsed between instructions.
+==================================[ NOVEMBER ]==================================
+TUE  3 - Decided to create a simpler task, to make the watch play snake
+	specifically.
